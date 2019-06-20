@@ -6,7 +6,7 @@ import time
 
 def adam_opt(model, train_set, valid_set, model_save_dir,
                           minibatch=64, valid_period=1, total_period = 0,
-                          disp_period = 1, n_iters=10000000, lr=0.001,
+                          disp_period = 1, n_iters=1, lr=0.001,
                           beta1=0.1, beta2=0.001, epsilon=1e-8, gamma=1-1e-8):
     """
     Adam optimizer (ICLR 2015)
@@ -111,7 +111,7 @@ def adam_opt(model, train_set, valid_set, model_save_dir,
                     train_loss.append(loss)
                     train_acc.append(acc)
                 cap_count += valid_period*minibatch
-                output_info = 'period %i, valid loss=[%.4f], valid acc=[%.4f], train loss=[%.4f], train acc=[%.4f]' % \
+                output_info = 'period=%i, valid loss=[%.4f], valid acc=[%.4f], train loss=[%.4f], train acc=[%.4f]' % \
                               (u/valid_period, numpy.mean(valid_loss), numpy.mean(valid_acc), numpy.mean(train_loss), numpy.mean(train_acc))
                 print(output_info)
                 log_file = open(model_save_dir + 'log.txt', 'a')
