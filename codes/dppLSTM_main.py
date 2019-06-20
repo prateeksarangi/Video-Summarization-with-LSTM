@@ -1,9 +1,9 @@
-"""
+'''
 Video Summarization with Long Short-term Memory
 4 datasets used in our task: OVP, Youtube, SumMe, TVSum: Pre-train on OVP, Youtube and SumMe/TVSum, test on TVSum/SumMe
 Ke Zhang
 Apr, 2017
-"""
+'''
 
 import os
 import numpy
