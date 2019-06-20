@@ -1,5 +1,8 @@
 __author__ = 'kezhang'
 
+import os
+os.environ["MKL_THREADING_LAYER"] = "GNU"
+
 import sys
 import h5py
 import json
