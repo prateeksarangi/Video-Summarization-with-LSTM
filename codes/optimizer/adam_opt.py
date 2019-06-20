@@ -58,7 +58,7 @@ def adam_opt(model, train_set, valid_set, model_save_dir,
     train_cost = []
     t0 = time.clock()
     try:
-        for u in xrange(n_iters):
+        for u in range(n_iters):
             if u % 10 == 0:
                 # refresh lr
                 try:
