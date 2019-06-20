@@ -6,6 +6,9 @@ Apr, 2017
 '''
 
 import os
+os.environ["MKL_THREADING_LAYER"] = "GNU"
+
+
 import numpy
 import theano
 import h5py
