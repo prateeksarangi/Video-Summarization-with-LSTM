@@ -82,6 +82,6 @@ if __name__ == '__main__':
     """
     Uncomment the following line if you want to train the model
     """
-    # train(model_idx = model_idx, train_set = train_set, val_set = val_set, model_saved = model_file)
+    train(model_idx = model_idx, train_set = train_set, val_set = val_set, model_saved = model_file)
 
     inference(model_file=model_file, model_idx = model_idx, test_set=test_set, test_dir='./res_LSTM/', te_idx=te_idx)
