@@ -79,9 +79,6 @@ if __name__ == '__main__':
     train_set, val_set, val_idx, test_set, te_idx = data_loader.load_data(data_dir = '../data/', dataset_testing = dataset_testing, model_type = model_type)
     model_file = '../models/model_trained_' + dataset_testing
 
-    """
-    Uncomment the following line if you want to train the model
-    """
     train(model_idx = model_idx, train_set = train_set, val_set = val_set, model_saved = model_file)
 
     inference(model_file=model_file, model_idx = model_idx, test_set=test_set, test_dir='./res_LSTM/', te_idx=te_idx)
