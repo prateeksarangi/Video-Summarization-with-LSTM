@@ -25,7 +25,7 @@ If you find the codes or other related resources from this repository useful, pl
 
 - MAC OS X or Linux
 - NVIDIA GPU with compute capability 3.5+
-- Python 2.7+
+- Python 3.7+
 - Theano 0.7+
 - Matlab
 
